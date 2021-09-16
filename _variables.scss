@@ -1,0 +1,24 @@
+$mainColor: #faf0e6;
+$primaryColor: #2f3542;
+$secondaryColor: #747d8c;
+$patikaBlueColor: #444afe;
+$shadowColor: #d4d4d4;
+
+@mixin buttons($width,$fontSize) {
+  border: none;
+  width: $width;
+  padding: 15px 60px 15px 60px;
+  margin: 15px;
+  border-radius: 5px;
+  background: $primaryColor;
+  color: $mainColor;
+  cursor: pointer;
+  font-size: $fontSize;
+  transition: 0.5s ease;
+
+  &:hover {
+    background: $mainColor;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+  }
+}

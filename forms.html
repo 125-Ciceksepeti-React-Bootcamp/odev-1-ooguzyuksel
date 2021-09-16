@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./form.js" defer></script>
+    <title>Forms | Oguzhan YUKSEL</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navBar">
+        <img
+          src="https://uploads-ssl.webflow.com/6097e0eca1e87557da031fef/609859a191abe5d64b17fed3_Patika%20logo-p-500.png"
+          class="navBar__logo"
+        />
+        <div class="navBar__inputDiv">
+          <i><i class="fas fa-search"></i></i
+          ><input
+            class="navBar__navInput"
+            disabled
+            placeholder="Search is not available!"
+          />
+        </div>
+        <img src="https://picsum.photos/50/50" class="navBar__profileImg" />
+      </nav>
+
+      <!-- Mid Area -->
+      <div class="secondaryContainer">
+        <!-- Sidebar -->
+        <div class="sideBar">
+          <ul>
+            <li class="list-item">
+              <a href="./index.html"><i class="fas fa-id-card"></i>Card</a>
+            </li>
+
+            <li class="list-item">
+              <a href="forms.html"><i class="fas fa-pencil-alt"></i>Form</a>
+            </li>
+
+            <li class="list-item">
+              <a href="https://github.com/ooguzyuksel" target="_blank"
+                ><i class="fab fa-github"></i>Github</a
+              >
+            </li>
+            <li class="list-item">
+              <a
+                href="https://www.linkedin.com/in/developeroguzyuksel/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i>LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Form and Card Area -->
+
+        <div class="dynamicArea">
+          <div class="formArea">
+            <form autocomplete="off">
+              <!-- Company and Title -->
+              <div class="company-title">
+                <div>
+                  <label for="company">Company</label>
+                  <input type="text" id="company" />
+                </div>
+                <div>
+                  <label for="title">Title</label>
+                  <input type="text" id="title" />
+                </div>
+              </div>
+              <!-- First Name and Last Name -->
+              <div class="first-last-name">
+                <div>
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" />
+                </div>
+                <div>
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" />
+                </div>
+              </div>
+              <!-- Mail and Phone -->
+              <div class="mail-phone">
+                <div>
+                  <label for="mail">Mail</label>
+                  <input type="email" id="mail" />
+                </div>
+                <!-- Phone and Number -->
+                <div>
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" />
+                </div>
+              </div>
+              <!-- Radio Buttons and Dropdown -->
+              <div class="top-radio-div">
+                <!-- <div><label for="jobFunction">Job Function</label></div> -->
+                <div class="radio-textarea">
+                  <div class="all-radio-buttons">
+                    <div>
+                      <input
+                        type="radio"
+                        name="radioCheck"
+                        id="campaign"
+                        value="Campaign"
+                      />
+                      <label for="campaign">Campaign Management</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="radioCheck"
+                        id="crm"
+                        value="CRM"
+                      />
+                      <label for="crm">CRM Administraion</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="radioCheck"
+                        id="mailDeployment"
+                        value="EmailDeployment"
+                      />
+                      <label for="mailDeployment">E-Mail Deployment</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="radioCheck"
+                        id="partner"
+                        value="Partner"
+                      />
+                      <label for="partner">Partner</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="radioCheck"
+                        id="employee"
+                        value="Employee"
+                      />
+                      <label for="employee">Employee</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="radioCheck"
+                        id="other"
+                        value="other"
+                      />
+                      <label for="other">Other</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text Area -->
+              <div class="text-area">
+                <label for="message">Message</label>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="50"
+                    rows="10"
+                    class="text"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="submit-button">
+                <button type="submit" class="form-submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-modal">
+      <div class="white-area">
+        <img src="https://picsum.photos/50/50" alt="lorem-profile">
+        <div class="form-info-modal">
+
+          
+        </div>
+        <button class="modal-close-button">Go Back to Form</button>
+      </div>
+    </div>
+    
+  </body>
+</html>
